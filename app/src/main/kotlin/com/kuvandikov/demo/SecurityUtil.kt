@@ -110,7 +110,7 @@ object SecurityUtil {
         }
     }
 
-    private fun hasSuspiciousInputDevices(): Boolean {
+    fun hasSuspiciousInputDevices(): Boolean {
         return try {
             val ids = InputDevice.getDeviceIds()
             ids.map { InputDevice.getDevice(it) }

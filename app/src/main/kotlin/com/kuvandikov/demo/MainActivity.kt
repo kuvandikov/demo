@@ -144,5 +144,8 @@ fun getInfo(deviceName: String, context: Context): String{
     builder.append("Emulator:isBatteryPresent: ${SecurityUtil.isBatteryPresent(context = context)}")
     builder.append("\n")
     builder.append("Emulator:isCpuInfoSuspect: ${SecurityUtil.isCpuInfoSuspect()}")
+    builder.append("\n")
+    builder.append("Emulator:hasSuspiciousInputDevices: ${SecurityUtil.hasSuspiciousInputDevices()}")
+
     return builder.toString()
 }
